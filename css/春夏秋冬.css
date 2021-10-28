@@ -1,0 +1,128 @@
+
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.header{
+			background-color: black;
+			width: 100%;
+			height: 40px;
+		}
+		.box div{
+			width: 25%;
+			height: 900px;
+			float:left;
+		}
+		.a1,.a2,.a3,.a4{
+			position: absolute;
+			top:40px;
+			
+			width: 25%;
+			height: 900px;
+			background: rgba(101,101,101,0.6);
+			color:#ffffff;
+			opacity:0;
+		}
+
+		h3{
+			text-align: center;
+			font-size:80px;
+			font-family: "楷体";
+		}
+		.img_01 a:hover .a1{
+			opacity: 0.8;
+		}
+		.img_02 a:hover .a2{
+			opacity: 0.8;
+		}
+		.img_03 a:hover .a3{
+			opacity: 0.8;
+		}
+		.img_04 a:hover .a4{
+			opacity: 0.8;
+		}
+	
+		.chun,.xia,.qiu,.dong{
+			position: absolute;
+			z-index:1;
+			width: 100%;
+			
+			height: 800px;
+			
+			text-align: center;
+		}
+		.chun{top:1000px;}
+		.xia{top:1850px;}
+		.qiu{top:2750px;}
+		.dong{top:3600px;}
+		.chun1,.xia2,.qiu2,.dong2{
+			text-align: left;
+			line-height: 1.8;
+			text-indent: 2em;
+			font-size:25px;
+			font-family:"新宋体";
+			margin: 30px auto;
+			width: 1400px;
+			height: auto;
+			
+		}
+		.xia1 img{width: 400px;height: 300px;margin: 40px 30px;}
+		
+		.qiu1 img,.dong1 img,.chun2 img{
+			width: 300px;
+			height: 400px;
+			margin: 30px 30px;
+		}
+		.foot{
+			position: absolute;
+			z-index:1;
+			top:4400px;
+			width: 100%;
+		height: 60px;
+		background-color: black;}
+
+
+	#box 
+{
+			
+			margin: 100px auto;
+	        width: 1000px;
+	        height: 400px;
+	        overflow: hidden;	
+}
+		
+		b{
+			position:absolute;
+			padding-top: 40px;
+		}
+#photo {
+	
+	border:none;
+	width: 5000px;
+	animation: switch 15s ease-out infinite;
+}
+ 
+#photo img {
+	float: left;
+	width: 1000px;
+	height: 400px;
+}
+ 
+@keyframes switch {
+	0%, 15% {
+		margin-left: 0;
+	}
+    21%, 36% {
+		margin-left: -1000px;
+	}
+	42%, 57% {
+		margin-left: -2000px;
+	}
+	63%, 78% {
+		margin-left: -3000px;
+	}
+	84%, 100% {
+		margin-left: -4000px;
+	}
+}
+		

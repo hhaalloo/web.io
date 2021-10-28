@@ -1,0 +1,71 @@
+/*顶部标签切换导航栏*/
+#nav {
+	 z-index:1;
+	 width: 100%;
+	 height:52px;
+     margin:0px auto;
+     text-align:center;
+}
+#nav ul
+{
+     background-color:ragb(0,0,0,0.2);
+     z-index:1;
+	 list-style-type:none;
+     display:inline-table;
+     position: relative;
+     box-shadow:0px 0px 0px rgba(167,167,167,1.00);
+}
+#nav ul ul {
+	background-color: none;
+    display:none;
+}
+#nav ul li {
+    float:left; 
+}
+#nav ul::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+#nav ul li a{
+	
+    display:block;
+    font-size:18px;
+    color:black;
+    text-decoration:none;
+    font-family:"微软雅黑";
+}
+#nav ul li a{
+	padding:15px 110px;
+}
+#nav ul li:hover > ul {
+    display:block;
+}
+#nav ul ul li:hover a{
+   color:rgba(0,0,0,1.00);
+}
+#nav ul li ul li:hover{
+	background-color: none;
+}
+#nav ul li:hover a{
+	text-decoration: none;
+    color:#FFF;
+}
+#nav ul ul {
+    border-radius:0;
+    position:absolute;
+    top:100%;
+    padding:0;
+}
+#nav ul ul li {
+    border-top:1px solid none;
+    border-bottom:1px solid none;
+}
+#nav ul ul li a {
+	
+    color:#FFF;
+}   
+#nav ul ul li a:hover {
+   background-colr:none;
+		}
+	

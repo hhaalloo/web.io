@@ -1,0 +1,42 @@
+/*轮播图*/
+		.cou{
+			z-index:0;
+			width: 100%;
+			height:900px;
+			
+			margin: -55px auto;
+			position: relative;
+		}
+		.lun img{
+			z-index:-1;
+			width: 100%;
+			height: 900px;
+			
+		}
+		.lun a{
+			display: none;
+		}
+		.lun a.on{
+			display: block;
+		}
+		.item{
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		
+		.item li{
+			float:left;
+			width: 15px;
+			height: 15px;
+			margin-left: 10px;
+			list-style:none;
+			border-radius: 50%;
+			background-color:aqua
+			
+		}
+		.item li.current{
+			background-color: orange;
+		}
+		
